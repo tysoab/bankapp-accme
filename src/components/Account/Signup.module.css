@@ -1,0 +1,32 @@
+.loading{
+  text-align: center;
+  color: #fff;
+}
+
+.isError{
+  text-align: justify;
+  color: #ff0000;
+  width: 50%;
+}
+
+.isError h4{
+  margin-bottom: 30px;
+}
+
+.emailUsed{
+  background-color: #faa3a3;
+  color: #ff0000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 5%;
+  z-index: 1001;
+}
+
+@media (max-width: 750px){
+  .isError,
+  .loading{
+    width: 90%;
+  }
+}

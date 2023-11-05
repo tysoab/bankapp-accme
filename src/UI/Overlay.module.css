@@ -1,0 +1,30 @@
+.overlay{
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.overlay .closeBtn{
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.closeBtn button{
+  background-color: transparent;
+  color: #ff0000;
+  font-size: 40px;
+}
+
+@media (max-width: 750px){
+  .overlay .closeBtn{
+    margin-bottom: 15px;
+  }
+  .closeBtn button{
+    font-size: 30px;
+  }
+}

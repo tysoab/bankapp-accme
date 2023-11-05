@@ -1,0 +1,46 @@
+.loan-container{
+width: 100%;
+}
+
+.loan-container form{
+  width: 50%;
+  margin: 50px auto;
+}
+
+.input input,
+.input{
+  color: #000;
+}
+
+.form-action{
+  text-align: right;
+  padding: 20px 5%;
+}
+
+.form-action button{
+  background-color: #014086;
+  color: #f9f9f9;
+}
+
+.error-msg{
+  color: #f04c4c;
+  text-align: center;
+  margin: 20px;
+}
+
+.spinner{
+  text-align: center;
+}
+
+.spinner img{
+  width: 40px;
+  border: 0;
+  border-radius: 16px;
+  background-color: transparent;
+}
+
+@media (max-width: 750px){
+  .loan-container form{
+    width: 80%;
+  }
+}

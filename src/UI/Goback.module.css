@@ -1,0 +1,10 @@
+.goback{
+  margin-top: 30px;
+  color: #014086;
+  display: flex;
+  align-items: center;
+}
+
+.goback h3{
+  cursor: pointer;
+}

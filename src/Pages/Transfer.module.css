@@ -1,0 +1,81 @@
+.loan-container{
+width: 100%;
+}
+
+.loan-container form{
+  width: 50%;
+  margin: 50px auto;
+}
+
+.input input,
+.input{
+  color: #000;
+}
+
+.form-action{
+  text-align: right;
+  padding: 20px 5%;
+}
+
+.form-action button{
+  background-color: #014086;
+  color: #f9f9f9;
+}
+
+.error-msg{
+  color: #f04c4c;
+  text-align: center;
+  margin: 20px;
+}
+
+.spinner{
+  text-align: center;
+}
+
+.spinner img{
+  width: 40px;
+  border: 0;
+  border-radius: 16px;
+  background-color: transparent;
+}
+
+
+.input-wrap{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.input-wrap label{
+  flex-basis: 150px;
+}
+.input-wrap select{
+  
+  padding: 5px 15px;
+  font-size: 16px;
+  background-color: transparent;
+  outline: none;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+}
+
+.error-msg{
+  color: #f04c4c;
+  text-align: center;
+  margin: 20px;
+}
+
+
+@media (max-width: 750px){
+  .input-wrap{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  .loan-container form{
+    width: 80%;
+  }
+}

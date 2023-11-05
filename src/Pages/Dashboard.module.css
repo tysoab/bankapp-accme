@@ -1,0 +1,53 @@
+.balance{
+  display: flex;
+  gap: 10px;
+}
+
+.balance p{
+  color: #014086;
+  font-weight: 600;
+}
+
+.content{
+  display: flex;
+  margin: 20px 10%;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content div{
+  width: 170px;
+  height: 200px;
+  padding: 20px;
+  border: 1.5px solid #014086;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.content div img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  font-weight: 600;
+}
+
+.content div span{
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 750px){
+  .content{
+    width: 100%;
+    margin: 20px 0;
+    gap: 20px;
+  }
+  .content div{
+    width: 150px;
+  }
+}

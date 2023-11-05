@@ -1,0 +1,39 @@
+.form{
+  width: 50%;
+}
+
+.form form h2{
+  color: #f9f9f9;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.form .form-action{
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+
+  padding: 0 7%;
+  margin-top: 30px;
+}
+
+.form-action button{
+  background-color: transparent;
+  color: #f9f9f9;
+  font-size: 18px;
+}
+
+.error-msg{
+  color: #faaeae;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (max-width: 750px){
+  .form{
+    width: 90%;
+    padding: 30px 5%;
+  }
+}

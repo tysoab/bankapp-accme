@@ -1,0 +1,15 @@
+.container{
+    Display: flex;
+    Justify-content: space-between;
+}
+
+.container .main-content{
+    Flex-basis: 82%;
+    padding: 20px 2%;   
+}
+
+@media (max-width: 750px){
+    .container .main-content{
+        flex-basis: 100%;
+    }
+}

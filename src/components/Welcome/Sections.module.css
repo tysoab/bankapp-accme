@@ -1,0 +1,256 @@
+.section1{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-radius: 0;
+  margin-top: -70px;
+}
+
+.section1 div{
+  background-color: #a4c519;
+  padding: 30px 20px;
+  border-right: 1px solid #f9f9f9;
+  position: relative;
+  cursor: pointer;
+}
+
+.section1 div::after{
+  content: '';
+  width: 0%;
+  border-bottom: 3px solid #5e5a5a;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.25s ease-out;
+}
+
+.section1 div:hover::after{
+  width: 100%;
+}
+
+.section1 div:last-child{
+  transform: scale(1.0, 1.0) skewX(-10deg);
+  border-right: 5px solid #f9f9f9;
+}
+
+.section1 p{
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.section1 svg,
+.section4 svg{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.section2{
+  text-align: center;
+  color: #5e5a5a;
+}
+
+.section2 h2{
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.section3,
+.section4,
+.section2b{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.section3{
+  margin-bottom: 70px;
+}
+.section3 div{
+  position: relative;
+}
+.section3 div div{
+  background-color: #014086;
+  border-right:3px solid #ff0000;
+  color: #f9f9f9;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  right: 20px;
+  bottom: -50px;
+}
+
+.section3 div img{
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.section3 button{
+  background-color: transparent;
+  border: 2px solid #f9f9f9;
+  color: #f9f9f9;
+  margin-top: 20px;
+}
+
+.section3 h4{
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.section4 div{
+  border: 3px solid #ccc;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer{
+  background-color: #014086;
+  color: #f9f9f9;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px 7%;
+}
+
+.footer div h2{
+  font-size: 16px;
+  padding: 5px 0;
+  text-align: center;
+  border-bottom: 3px solid #f9f9f9;
+}
+
+.footer div a{
+  display: block;
+  margin: 10px 0;
+  color: #ccc;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.section2b{
+  justify-content: center;
+}
+
+.section2b div{
+  padding: 20px;
+  width: 180px;
+  height: 200px;
+  border: 0px solid #014086;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-out;
+}
+
+.section2b div:hover{
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.3));
+}
+
+.section2b div:nth-child(1):hover{
+  background-image: url('https://www.thebizhub.ng/wp-content/uploads/2022/01/BANKING.jpg');
+}
+
+.section2b div:nth-child(2):hover{
+  background-image: url('https://blog.kms-solutions.asia/hs-fs/hubfs/Screen%20Shot%202022-09-05%20at%2015.15.32%20-%20Copy%20(1).jpg?width=630&height=420&name=Screen%20Shot%202022-09-05%20at%2015.15.32%20-%20Copy%20(1).jpg');
+}
+
+.section2b div:nth-child(3):hover{
+  background-image: url('https://www.dignited.com/wp-content/uploads/2018/07/whatsapp-banking.jpg');
+}
+
+.section2b div:nth-child(4):hover{
+  background-image: url('https://i.insider.com/63c1ae6a01aaab001848b68b?width=1136&format=jpeg');
+}
+
+.section2b div:last-child:hover{
+  background-image: url('https://brandsprof.com/wp-content/uploads/2023/07/Complete-List-Of-Access-Bank-Codes-And-Services.png');
+}
+
+.section2b h4{
+  font-size: 15px;
+  color: #5e5a5a;
+}
+
+.section2b img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.gotoTop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.gotoTop a{
+  text-decoration: none;
+  background-color: #5e5a5a;
+  padding: 15px;
+  border-radius: 50%;
+  opacity: 0.8;
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 750px){
+  .section1{
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+  }
+
+  .section2{
+    text-align: justify;
+  }
+
+  .section3,
+  .section4{
+    flex-direction: column;
+  }
+
+  .section3 div{
+    margin-top: 50px;
+  }
+  .section3 div:first-child{
+    margin-top: unset;
+  }
+
+  .section4 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: unset;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .section4 svg{
+    align-self: center;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
+  .section2b{
+    flex-wrap: wrap;
+  }
+}

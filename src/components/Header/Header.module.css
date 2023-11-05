@@ -1,0 +1,45 @@
+.header{
+  position: sticky;
+  top: 0;
+  background-color: #e9e9e9;
+  
+  width: 100%;
+  padding: 15px 7%;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.header .logo{
+  color: #40408d;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.header div{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header div button{
+  color: #ff0000;
+  background-color: #f1a3a3;
+}
+
+.header .menubar{
+  cursor: pointer;
+  font-size: 25px;
+  display: none;
+}
+
+@media (max-width: 750px){
+  .header div h4{
+    display: none;
+  }
+
+  .header .menubar{
+    display: inline-block;
+  }
+}

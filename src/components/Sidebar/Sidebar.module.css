@@ -1,0 +1,60 @@
+.aside{
+    flex-basis: 15%;
+    top: 70px;
+    align-self: flex-start;
+    Position: sticky;
+    bottom: 0;
+    padding: 20px 2%;
+}
+
+.aside div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aside hr{
+  margin: 20px 0 20px 0;
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+}
+
+.aside svg{
+  font-size: 25px;
+}
+
+.aside a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 0;
+  font-weight: 700;
+}
+
+.aside a:hover,
+.aside .active{
+  color: #40408d;
+}
+
+@media (max-width:750px){
+  .aside{
+  padding: 20px 7%;
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  background-color: #014086;
+  color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.aside a{
+  color: #f9f9f9;
+}
+
+.dropdown{
+  left: 0;
+}
+}
