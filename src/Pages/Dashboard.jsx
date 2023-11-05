@@ -63,6 +63,7 @@ if(user && user.transaction){
 
   if(currAccount){
     content = <Container>
+      <div className={classes.container}>
       <div className={classes.balance}>
         <h4>Avail Balance: </h4>
         <p>{balance}</p>
@@ -180,6 +181,7 @@ if(user && user.transaction){
           </span>
         </motion.div>
       </SectionWrapper>
+      </div>
     </Container>
   }
 

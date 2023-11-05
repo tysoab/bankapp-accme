@@ -1,3 +1,8 @@
+.container{
+  width: 100%;
+  padding: 0;
+}
+
 .balance{
   display: flex;
   gap: 10px;
@@ -10,10 +15,10 @@
 
 .content{
   display: flex;
-  margin: 20px 10%;
+  margin: 20px auto;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .content div{
@@ -43,11 +48,10 @@
 
 @media (max-width: 750px){
   .content{
-    width: 100%;
-    margin: 20px 0;
-    gap: 20px;
+    width: 90%;
   }
   .content div{
-    width: 150px;
+    width: 120px;
+    height: 150px;
   }
 }
