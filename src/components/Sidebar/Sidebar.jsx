@@ -14,7 +14,6 @@ const Sidebar = function(){
     const checkInvestment = user.transaction.filter(transaction => transaction.type === 'Investment');
     investment = checkInvestment.length !== 0
   }
-  console.log(investment)
   
   
 
