@@ -78,7 +78,8 @@ const submitHandler = async (event)=>{
     let timeoutId;
     clearTimeout(timeoutId);
     timeoutId = setTimeout(()=>{
-    window.location.reload();
+    // window.location.reload();
+    navigate('/')
     setIsSubmitting(false);
     }, 5000);
   }
