@@ -9,11 +9,18 @@ const Sidebar = function(){
   const regContext = useContext(RegisterContext);
   const user = useSelector(state => state.user.user);
   // let invest = user.transaction.filter(transaction => transaction.type === 'Investment');
-  let investment;
+  let investment, transaction;
   if(user && user.accLinked){
     const checkInvestment = user.transaction.filter(transaction => transaction.type === 'Investment');
     investment = checkInvestment.length !== 0
   }
+
+  if(user){
+    const checkTransaction = user.transaction;
+    transaction = checkTransaction;
+  }
+
+  console.log(transaction)
   
   
 
@@ -52,7 +59,9 @@ const Sidebar = function(){
       >
         Investment
       </NavLink>
-      <NavLink to='/transaction'
+      
+      {transaction &&
+        <NavLink to='/transaction'
       className={({ isActive }) =>
       isActive ? classes.active : undefined
     }
@@ -61,6 +70,7 @@ const Sidebar = function(){
       >
         Transactions
       </NavLink>
+      }
 
     {investment &&
       <NavLink to='/investment-history'
