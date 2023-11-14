@@ -1,9 +1,12 @@
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Button from "../../UI/Button";
 import SectionWrapper from "../../UI/SectionWrapper";
 import classes from './Sections.module.css';
 
 const Sections = function(){
+
+  const { scrollY } = useScroll();
+  const opacityGotoUp = useTransform(scrollY, [0, 500], [0, 1]);
 
   return <>
     <SectionWrapper className={classes.section1}>
@@ -183,9 +186,9 @@ const Sections = function(){
       <a href=''>Scam Alert</a>
     </div>
     </motion.SectionWrapper>
-    <div className={classes.gotoTop}>
+    <motion.div className={classes.gotoTop} style={{opacity: opacityGotoUp}}>
       <a href='#header'>&uarr;</a>
-    </div>
+    </motion.div>
   </>
 };
 
